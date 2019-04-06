@@ -874,7 +874,7 @@ callback CallBack = Z? (X x, optional Y y, /*trivia*/ optional Z z);
     expect(
       section.querySelector("dfn#dom-documented-docstring").textContent
     ).toEqual("docString");
-
+    console.log(section.querySelectorAll("dfn")[1]);
     expect(
       section.querySelector("dfn#dfn-some-generic-term").textContent
     ).toEqual("Some generic term");
